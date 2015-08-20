@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/icon_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon_img"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/icon_img"
+        android:text="避风塘"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon_img"
+        android:layout_below="@id/title_txt"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/icon_img"
+        android:gravity="bottom"
+        android:text="[53店通用] 代金券，每桌最多可用3张！除购" />
+
+</RelativeLayout>
