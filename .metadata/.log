@@ -242,3 +242,33 @@ org.eclipse.core.internal.resources.ResourceException: A resource already exists
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2015-08-20 16:09:20.514
 !MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2015-08-20 19:36:35.170 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data E:\IdeaProjects\Android-ImageSlider-warmtel -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-08-20 19:37:45.479
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2015-08-21 12:50:58.325 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -data E:\IdeaProjects\Android-ImageSlider-warmtel -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-08-21 12:51:45.981
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2015-08-21 15:43:07.169 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data E:\IdeaProjects\Android-ImageSlider-warmtel -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-08-21 15:43:18.247
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2

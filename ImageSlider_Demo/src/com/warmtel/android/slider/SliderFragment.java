@@ -5,8 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +27,7 @@ public class SliderFragment extends Fragment {
 	private ListView mListView;
 	private View mHeaderView;
 	private SliderLayout mSliderLayout;
+	private SwipeRefreshLayout mSwipeRefreshLayout;
 	
 	public static Fragment newInstance(){
 		SliderFragment fragment = new SliderFragment();
@@ -34,11 +39,16 @@ public class SliderFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.reference_slider_main, container, false);
 		
-		mListView = (ListView) v.findViewById(R.id.transformers);
+		mListView = (ListView) v.findViewById(R.id.myslider_listview);
 		
 		mHeaderView = inflater.inflate(R.layout.reference_slider_item_layout, null);
 		mSliderLayout = (SliderLayout) mHeaderView.findViewById(R.id.my_slider);
 		
+		mSwipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.swip);
+		mSwipeRefreshLayout.setColorScheme(
+				android.R.color.holo_blue_bright,
+				android.R.color.holo_orange_dark,
+				android.R.color.holo_green_dark, android.R.color.holo_red_dark);
 		return v;
 	}
 	
@@ -64,6 +74,34 @@ public class SliderFragment extends Fragment {
 		mListView.setAdapter(mAdapter);
 		
 		mAdapter.setData(getDataContent());
+		
+		
+		mSwipeRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
+			
+			@Override
+			public void onRefresh() {
+				
+				new AsyncTask<String, Void, String>(){
+
+					@Override
+					protected String doInBackground(String... params) {
+						try {
+							Thread.sleep(3000);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+						return "";
+					}
+					@Override
+					protected void onPostExecute(String result) {
+						super.onPostExecute(result);
+						
+						mSwipeRefreshLayout.setRefreshing(false); //停止刷新
+					}
+					
+				}.execute();
+			}
+		});
 		
 	}
 	public class MyBaseAdapter extends BaseAdapter {

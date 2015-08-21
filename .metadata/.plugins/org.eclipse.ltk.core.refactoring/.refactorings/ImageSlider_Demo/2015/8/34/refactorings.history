@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;transformers&apos; in &apos;com.warmtel.android.slider.R.id&apos; to &apos;myslider_listview&apos;&#x0D;&#x0A;- Original project: &apos;ImageSlider_Demo&apos;&#x0D;&#x0A;- Original element: &apos;com.warmtel.android.slider.R.id.transformers&apos;&#x0D;&#x0A;- Renamed element: &apos;com.warmtel.android.slider.R.id.myslider_listview&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;transformers&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.warmtel.android.slider{R.java[R[id^transformers" name="myslider_listview" references="true" setter="false" stamp="1440143225319" textual="false" version="1.0"/>
+</session>
