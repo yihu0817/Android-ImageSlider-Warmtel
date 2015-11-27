@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="pager_one" type="drawable">@android:color/holo_blue_dark</item>
+     <item name="pager_two" type="drawable">@android:color/holo_red_dark</item>
+     <item name="pager_three" type="drawable">@android:color/holo_green_dark</item>
+</resources>
