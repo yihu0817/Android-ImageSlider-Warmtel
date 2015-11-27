@@ -104,6 +104,13 @@ public class SliderFragment extends Fragment {
 		});
 		
 	}
+	
+	@Override
+	public void onDestroyView() {
+		// To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
+		super.onDestroyView();
+		mSliderLayout.stopAutoCycle();
+	}
 	public class MyBaseAdapter extends BaseAdapter {
 		private Context mContext;
 		private List<ContentBean> mList = new ArrayList<ContentBean>();
